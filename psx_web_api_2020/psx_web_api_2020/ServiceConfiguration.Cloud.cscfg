@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="psx_web_api_2020" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="5" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=hamza2;AccountKey=$(_hamza2.key_)" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="93966d14-997b-4f53-8298-2766f3631599" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
